@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -70,4 +71,20 @@ dependencies {
 
     // lifecycle livedata
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+
+    // dagger-hilt
+    implementation "com.google.dagger:hilt-android:$hiltCoreVersion"
+    kapt "com.google.dagger:hilt-compiler:$hiltCoreVersion"
+    kapt "androidx.hilt:hilt-compiler:$hiltVersion"
+
+    // okHttp Client
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    // coil image
+    implementation "com.github.skydoves:landscapist-coil:$coilversion"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.github.skydoves:sandwich:$sandwichVersion"
 }
