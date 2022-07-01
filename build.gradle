@@ -4,6 +4,7 @@ buildscript {
         gradleBuildTool = '7.0.0'
         kotlin = '1.5.10'
         roomVersion = '2.3.0'
+        lifecycleVersion = '2.2.0'
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleBuildTool"

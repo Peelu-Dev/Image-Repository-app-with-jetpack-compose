@@ -67,4 +67,7 @@ dependencies {
     kapt "androidx.room:room-compiler:$roomVersion"
 
     implementation "androidx.compose.runtime:runtime:$compose_version"
+
+    // lifecycle livedata
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
 }
